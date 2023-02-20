@@ -30,7 +30,9 @@ SECRET_KEY = env.str("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DEBUG", default=False)
 
-ALLOWED_HOSTS = [".railway.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["newspaper-production-471b.up.railway.app", "localhost", "127.0.0.1"]
+
+CSRF_TRUSTED_ORIGINS = ["https://newspaper-production-471b.up.railway.app"]
 
 
 # Application definition
